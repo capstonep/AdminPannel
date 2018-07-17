@@ -1,0 +1,11 @@
+<h1>CLIENTS <span>Client Data</span></h1>
+<hr>
+<div class="container-fluid clientPage">
+    <input type="text" name="search" placeholder="Search Clients.." ng-keyup="findClient()" ng-model="clientInfo">
+    <div class="row">
+        <div class="col-sm-3 client-box" ng-repeat="x in clients">
+            <div class="client-data-box" id="client{{x}}">
+            </div>
+        </div>
+    </div>
+</div>

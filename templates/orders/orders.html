@@ -1,0 +1,58 @@
+<h1>ORDERS <span>New Order Details</span></h1>
+<hr>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Date/Time</th>
+            <th>Client Name</th>
+            <th>Client Username</th>
+            <th>Client Address</th>
+            <th>Ordered Items</th>
+            <th>Order Amount</th>
+            <th>Points Earned</th>
+            <th>Payment Type</th>
+            <th>Order Type</th>
+            <th>Order Status</th>
+            <th>Confirm</th>
+            <th>Delete Order</th>
+        </tr>
+    </thead>
+    <tbody id="orders">
+
+
+    </tbody>
+</table>
+
+<!-- The Modal -->
+<div class="modal" id="orderItems">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Ordered Items</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderedItems">
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+</div>

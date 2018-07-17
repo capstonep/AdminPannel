@@ -1,0 +1,56 @@
+<h1>DASHBOARD <span>Control Pannel</span></h1>
+<hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4 outer-box">
+            <div class="func-box orders" ui-sref="main.orders">
+                <div class="details">
+                    <h3>Orders</h3>
+                    <h4>Orders Details</h4>
+                </div>
+                <i class="fa fa-pencil-square-o"></i>
+                <p>More Info <span class="fa fa-arrow-circle-o-right"></span></p>
+            </div>
+        </div>
+        <div class="col-sm-4 outer-box">
+            <div class="func-box stock" ui-sref="main.viewStock.snacks">
+                <div class="details">
+                    <h3>Stock</h3>
+                    <h4>Stock Information</h4>
+                </div>
+                <i class="fa fa fa-pie-chart"></i>
+                <p>More Info <span class="fa fa-arrow-circle-o-right"></span></p>
+            </div>
+        </div>
+        <div class="col-sm-4 outer-box">
+            <div class="func-box clients" ui-serf="main.clients" ng-click="clientPage()">
+                <div class="details">
+                    <h3>Clients</h3>
+                    <h4>Client Data</h4>
+                </div>
+                <i class="fa fa-users"></i>
+                <p>More Info <span class="fa fa-arrow-circle-o-right"></span></p>
+            </div>
+        </div>
+        <div class="col-sm-4 outer-box">
+            <div class="func-box flyer" ui-serf="main.viewFlyers" ng-click="flyerPage()">
+                <div class="details">
+                    <h3>Flyer</h3>
+                    <h4>Flyers Information</h4>
+                </div>
+                <i class="fa fa-newspaper-o"></i>
+                <p>More Info <span class="fa fa-arrow-circle-o-right"></span></p>
+            </div>
+        </div>
+        <div class="col-sm-4 outer-box">
+            <div class="func-box settings" ui-sref="main.admin">
+                <div class="details">
+                    <h3>Settings</h3>
+                    <h4>Admin Settings</h4>
+                </div>
+                <i class="fa fa-gears"></i>
+                <p>More Info <span class="fa fa-arrow-circle-o-right"></span></p>
+            </div>
+        </div>
+    </div>
+</div>

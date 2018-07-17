@@ -1,0 +1,64 @@
+<h1>ADMIN <span>Admin Settings</span></h1>
+<hr>
+<div class="admin-form">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group admin_data_form">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="admin_name" ng-model="admin_name">
+                <label for="usr">Username:</label>
+                <input type="text" class="form-control" id="admin_username" ng-model="login_id">
+                <label for="usr">Password:</label>
+                <input type="text" class="form-control" id="admin_password" ng-model="login_pass">
+                <label for="usr">Contact:</label>
+                <input type="text" class="form-control" id="admin_contatc" ng-model="login_contact">
+                <br>
+                <button type="button" class="btn btn-primary active" ng-click="update_admin()">Update Admin</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group admin_data_form">
+                <label for="usr">Profile Image:</label>
+                <output id="list"><img src="{{admin_img}}" id="admin_img"></output>
+                <input type="file" value="Pic" class="form-control" id="files" name="files[]" multiple/>
+                <script>
+                    function handleFileSelect(evt) {
+                        var files = evt.target.files; // FileList object
+
+                        // Loop through the FileList and render image files as thumbnails.
+                        for (var i = 0, f; f = files[i]; i++) {
+
+                            // Only process image files.
+                            if (!f.type.match('image.*')) {
+                                continue;
+                            }
+
+                            var reader = new FileReader();
+
+                            // Closure to capture the file information.
+                            reader.onload = (function(theFile) {
+                                return function(e) {
+                                    // Render thumbnail.
+                                    var span = document.createElement('span');
+                                    span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                        '" title="', escape(theFile.name), '"/>'
+                                    ].join('');
+                                    $("#list").html("");
+                                    document.getElementById('list').insertBefore(span, null);
+                                };
+                            })(f);
+
+                            // Read in the image file as a data URL.
+                            reader.readAsDataURL(f);
+                        }
+                    }
+
+                    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+                </script>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</div>

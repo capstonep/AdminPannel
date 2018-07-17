@@ -1,0 +1,41 @@
+<h1>STOCK <span>Stock Information</span></h1>
+<hr>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark stock-options">
+    <ul class="navbar-nav">
+        <li class="nav-item" ui-sref=".snacks" ng-click="getStockData('snacks')">
+            <a class="nav-link">Snacks</a>
+        </li>
+        <li class="nav-item" ui-sref=".bakery" ng-click="getStockData('bakery')">
+            <a class="nav-link">Bakery Products</a>
+        </li>
+        <li class="nav-item" ui-sref=".cleansers" ng-click="getStockData('cleanser')">
+            <a class="nav-link">Cleansers</a>
+        </li>
+        <li class="nav-item" ui-sref=".dairy" ng-click="getStockData('dairy')">
+            <a class="nav-link">Dairy Products</a>
+        </li>
+        <li class="nav-item" ui-sref=".frozen" ng-click="getStockData('frozen')">
+            <a class="nav-link">Frozen Food</a>
+        </li>
+        <li class="nav-item" ui-sref=".fruits" ng-click="getStockData('fruits')">
+            <a class="nav-link">Fruits</a>
+        </li>
+        <li class="nav-item" ui-sref=".paper" ng-click="getStockData('paper')">
+            <a class="nav-link">Paper Goods</a>
+        </li>
+        <li class="nav-item" ui-sref=".personal" ng-click="getStockData('personal')">
+            <a class="nav-link">Personal Care</a>
+        </li>
+        <li class="nav-item" ui-sref=".sweets" ng-click="getStockData('sweets')">
+            <a class="nav-link">Sweets</a>
+        </li>
+        <li class="nav-item" ui-sref=".vegetables" ng-click="getStockData('vegetables')">
+            <a class="nav-link">Vegetables</a>
+        </li>
+        <li class="nav-item" ui-sref=".grocery" ng-click="getStockData('grocery')">
+            <a class="nav-link">Grocery</a>
+        </li>
+    </ul>
+</nav>
+
+<div ui-view class="stock-view"></div>

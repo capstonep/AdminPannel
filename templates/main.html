@@ -1,0 +1,62 @@
+<div class="left-side-nav">
+    <div class="nav-head" ui-sref=".dashboard">
+        MASTER ADMIN
+    </div>
+    <div class="admin_info">
+        <img src="{{admin_img}}" id="admin_img">
+        <h4><span class="fa fa-user-secret"></span> {{admin_name}}</h4>
+        <h4><span class="fa fa-universal-access online_icon"></span> {{admin_status}}</h4>
+    </div>
+    <ul>
+        <li ui-sref=".dashboard"><span class="fa fa-home"></span> Dashboard</li>
+        <li ui-sref=".admin"><span class="fa fa-user-circle-o"></span> Admin</li>
+
+        <li data-toggle="collapse" data-target="#order-database">
+            <span class="fa fa-address-card-o"></span> Orders
+            <span class="fa fa-arrow-right moveArrow"></span>
+            <span class="fa fa-arrow-down moveArrow"></span>
+        </li>
+        <ul id="order-database" class="collapse">
+            <li ui-sref=".orders"><span class="fa fa-reorder"></span> New Orders</li>
+            <li ui-sref=".preOrders"><span class="fa fa-archive"></span> Completed Orders</li>
+        </ul>
+
+        <li data-toggle="collapse" data-target="#stock-database">
+            <span class="fa fa-stack-overflow"></span> Stock Database
+            <span class="fa fa-arrow-right moveArrow"></span>
+            <span class="fa fa-arrow-down moveArrow"></span>
+        </li>
+        <ul id="stock-database" class="collapse">
+            <li ui-sref=".viewStock.snacks"><span class="fa fa-sticky-note"></span> View Stock Items</li>
+            <li ui-sref=".addStock"><span class="fa fa-plus"></span> Add Stock Items</li>
+            <li ui-sref=".updateStock"><span class="fa fa-edit"></span> Update Stock Items</li>
+            <li ui-sref=".updateStock"><span class="fa fa-trash"></span> Delete Stock Items</li>
+        </ul>
+
+        <li data-toggle="collapse" data-target="#flyers">
+            <span class="fa fa-newspaper-o"></span> Flyer Section
+            <span class="fa fa-arrow-right moveArrow"></span>
+            <span class="fa fa-arrow-down moveArrow"></span>
+        </li>
+        <ul id="flyers" class="collapse">
+            <li ui-sref=".viewFlyers"><span class="fa fa-sticky-note"></span> View Flyers</li>
+            <li ui-sref=".addFlyers"><span class="fa fa-plus"></span> Generate Flyers</li>
+            <li ui-sref=".editFlyers"><span class="fa fa-edit"></span> Edit Flyers</li>
+            <li ui-sref=".viewFlyers"><span class="fa fa-trash"></span> Delete Flyers</li>
+        </ul>
+        <li ui-serf=".clients" ng-click="clientPage()"><span class="fa fa-users"></span> Clients</li>
+    </ul>
+</div>
+<div class="main-head">
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle admin-btn" data-toggle="dropdown">
+      Welcome, Admin
+    </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" ng-click="logout()">Log Out</a>
+        </div>
+    </div>
+</div>
+<div class="main-data">
+    <div ui-view class="view"></div>
+</div>

@@ -1,0 +1,57 @@
+<img class="background" src="img/back.png" alt="Pineapple">
+<div class="loginBox text-center">
+    <h4>ADMIN LOGIN</h4>
+    <input type="text" placeholder="Username" id="username" class="loginInputs" ng-model="username">
+
+    <input type="password" placeholder="Password" id="password" class="loginInputs" ng-model="password">
+
+    <p>Don't know password? <strong ng-click="recoverPassword()">Recover password</strong></p>
+
+    <button type="button" class="btn btn-primary loginBtn" ng-click="login()">Enter  <span class="fa fa-angellist"></span></button>
+</div>
+
+<div class="recoverBox text-center">
+    <h4>PASSWORD RECOVER</h4>
+    <input type="text" placeholder="Username" id="rec_username" class="loginInputs">
+
+    <input type="text" placeholder="Registered Contact" id="reg_phone" class="loginInputs">
+
+    <button type="button" class="btn btn-primary sendCode" ng-click="sendCode()">Send Code  <span class="fa fa-comment-o"></span></button>
+    <button type="button" class="btn btn-danger cancelRecovery" ng-click="cancelRecovery()">Cancel</button>
+</div>
+
+<div class="newPasswordBox text-center">
+    <h4>NEW PASSWORD</h4>
+    <input type="text" placeholder="New Password" id="new_password" class="loginInputs">
+
+    <input type="text" placeholder="Re-Confirm Password" id="confirm_new_password" class="loginInputs">
+
+    <button type="button" class="btn btn-primary submitPass" ng-click="submitNewPass()">Submitt Password  <span class="fa fa-chain"></span></button>
+    <button type="button" class="btn btn-danger cancelRecovery" ng-click="cancelRecoveryFromNewPass()">Cancel</button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="secretCode">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">Enter Secret Code</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p>Secret code has been sent to your registered phone number:</p>
+                <input type="password" placeholder="Secret Code" id="sec_code" class="loginInputs">
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="submitSecretCode()">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</div>

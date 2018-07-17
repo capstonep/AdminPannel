@@ -1,0 +1,26 @@
+<h1>ADD <span>New Item in Stock</span></h1>
+<hr>
+<div class="new-item-form">
+    <input type="text" class="form-control" id="p_name" placeholder="Product Name" ng-model="p_name">
+    <textarea class="form-control" rows="5" id="p_des" placeholder="Product Description (Optional)" ng-model="p_des"></textarea>
+    <input type="text" class="form-control" id="p_image" placeholder="Product Image Link (Optional)" ng-model="p_image">
+    <input type="text" class="form-control" id="p_price" placeholder="Product Price $" ng-model="p_price">
+    <label>Select Category of Product:</label>
+    <select class="form-control" id="p_cat" name="sellist1" ng-model="p_cat">
+        <option value="snacks">Snacks</option>
+        <option value="bakery">Bakery Product</option>
+        <option value="cleanser">Cleanser</option>
+        <option value="dairy">Dairy Product</option>
+        <option value="frozen">Frozen Food</option>
+        <option value="fruits">Fruits</option>
+        <option value="paper">Paper Goods</option>
+        <option value="personal">Personal Care</option>
+        <option value="sweets">Sweets</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="grocery">Grocery</option>
+      </select>
+    <input type="text" class="form-control" id="p_weigth" placeholder="Product Weight (If Any) (kg)" ng-model="p_weight">
+    <input type="text" class="form-control" id="p_brand" placeholder="Product Brand (If Any)" ng-model="p_brand">
+    <button type="button" class="btn btn-primary active" ng-click="add_product()">Add Product</button>
+    <button type="button" class="btn btn-danger active cncl-btn" ui-sref="main.dashboard">Cancel</button>
+</div>

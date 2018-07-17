@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand">Fruits</a>
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+</nav>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Product Id</th>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Product Category</th>
+                <th>Product Description</th>
+                <th>Brand</th>
+                <th>Weight (kg)</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in stockData">
+                <td>{{$index}}</td>
+                <td>{{x._id.$oid}}</td>
+                <td><img src="{{x.product_image}}" width="80px"></td>
+                <td>{{x.product_name}}</td>
+                <td>{{x.product_cat}}</td>
+                <td>{{x.product_des}}</td>
+                <td>{{x.product_brand}}</td>
+                <td>{{x.product_weight}}</td>
+                <td>${{x.product_price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

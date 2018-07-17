@@ -1,0 +1,72 @@
+[debug] [2018-07-16T18:20:07.952Z] ----------------------------------------------------------------------
+[debug] [2018-07-16T18:20:07.955Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-16T18:20:07.955Z] CLI Version:   3.19.3
+[debug] [2018-07-16T18:20:07.955Z] Platform:      darwin
+[debug] [2018-07-16T18:20:07.955Z] Node Version:  v10.3.0
+[debug] [2018-07-16T18:20:07.956Z] Time:          Mon Jul 16 2018 14:20:07 GMT-0400 (EDT)
+[debug] [2018-07-16T18:20:07.956Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-16T18:20:07.970Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-16T18:20:07.970Z] > authorizing via signed-in user
+[debug] [2018-07-16T18:20:07.973Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/onkar-spices-f2eea  
+  
+ Mon Jul 16 2018 14:20:07 GMT-0400 (EDT)
+[debug] [2018-07-16T18:20:08.223Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T18:20:08.225Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/onkar-spices-f2eea/tokens  
+  
+ Mon Jul 16 2018 14:20:08 GMT-0400 (EDT)
+[debug] [2018-07-16T18:20:08.555Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T18:20:08.556Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/onkar-spices-f2eea  
+  
+ Mon Jul 16 2018 14:20:08 GMT-0400 (EDT)
+[debug] [2018-07-16T18:20:08.820Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/student/Downloads/ProjectOnkarFoods'...
+[info] 
+[debug] [2018-07-16T18:20:12.323Z] Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/logs'
+    at Object.fs.mkdirSync (fs.js:872:3)
+    at Object.assertLogsPath (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/emulator/logs.js:65:10)
+    at new Controller (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/cli/controller.js:77:32)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/functionsEmulator.js:113:21)
+    at Object.start (/usr/local/lib/node_modules/firebase-tools/lib/serve/functions.js:9:29)
+    at /usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:17:21
+    at arrayMap (/usr/local/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:639:23)
+    at Function.map (/usr/local/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9554:14)
+    at _serve (/usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:15:7)
+    at Command._action (/usr/local/lib/node_modules/firebase-tools/commands/serve.js:48:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-07-16T18:23:44.430Z] ----------------------------------------------------------------------
+[debug] [2018-07-16T18:23:44.433Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve -p 8081
+[debug] [2018-07-16T18:23:44.433Z] CLI Version:   3.19.3
+[debug] [2018-07-16T18:23:44.433Z] Platform:      darwin
+[debug] [2018-07-16T18:23:44.433Z] Node Version:  v10.3.0
+[debug] [2018-07-16T18:23:44.434Z] Time:          Mon Jul 16 2018 14:23:44 GMT-0400 (EDT)
+[debug] [2018-07-16T18:23:44.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-16T18:23:44.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-16T18:23:44.489Z] > authorizing via signed-in user
+[debug] [2018-07-16T18:23:44.492Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/onkar-spices-f2eea  
+  
+ Mon Jul 16 2018 14:23:44 GMT-0400 (EDT)
+[debug] [2018-07-16T18:23:44.735Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T18:23:44.736Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/onkar-spices-f2eea/tokens  
+  
+ Mon Jul 16 2018 14:23:44 GMT-0400 (EDT)
+[debug] [2018-07-16T18:23:45.030Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T18:23:45.031Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/onkar-spices-f2eea  
+  
+ Mon Jul 16 2018 14:23:45 GMT-0400 (EDT)
+[debug] [2018-07-16T18:23:45.465Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/student/Downloads/ProjectOnkarFoods'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-16T18:23:49.402Z] Fetching environment
+[debug] [2018-07-16T18:23:49.404Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/908094164598:getServerAppConfig  
+  
+ Mon Jul 16 2018 14:23:49 GMT-0400 (EDT)
+[debug] [2018-07-16T18:23:49.628Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-16T18:23:49.629Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-16T18:23:53.412Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
